@@ -155,7 +155,7 @@ lines(c(-1, 4), c(1, 1), lty = 2)
 # First, get a uniform distribution of probability values between 0 and 1
 rand_prob <- runif(1000, 0, 1)
 
-# Then logit transform these to get them on the probability scale
+# Then logit transform these to get them on the logit scale
 logit_rand_prob <- log(rand_prob / (1-rand_prob))
 # Note that these values are no longer just between 0 and 1. In fact, they
 # can go from negative infinity to infinity (just like the normal distribution!)
